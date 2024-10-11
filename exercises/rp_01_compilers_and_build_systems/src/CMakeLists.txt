@@ -23,7 +23,7 @@ add_library(core_library SHARED
 )
 
 # TODO: Include the current directory ( . ) to the list of directories to search for header files
-include_directories(.)
+include_directories(core_library .)
 
 # TODO: Include the Eigen3 library to the list of libraries to link against
 target_link_libraries( core_library Eigen3::Eigen)
